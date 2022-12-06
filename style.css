@@ -1,0 +1,30 @@
+body{
+/* background-color: rgb(197, 12, 58); */
+
+margin: 0px;
+padding: 0px;
+
+}
+.container{
+   
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin: auto;
+    margin-top: 3rem;
+    background-color: lightblue;
+    text-align: center;
+}
+h1{
+    color: rgb(15, 57, 194)
+}
+.change-table,th,td {
+
+    border: 1.5px solid yellow;
+    border-collapse:collapse;
+
+}
+.footer{
+    margin-top: 5rem;
+    text-align: center;
+}
