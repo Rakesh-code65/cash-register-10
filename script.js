@@ -19,12 +19,15 @@ function validateBillAndCashAmount(){
   
       if( billAmount.value  > 0 ) {
 
-                   if(cashGiven.value >= billAmount.value){
+                   if(cashGiven.value > billAmount.value){
   
                        const amountToBeReturned = cashGiven.value - billAmount.value;
                     //    console.log(billAmount.value);
                        calculateChange(amountToBeReturned);
   
+                   }
+                   else if( cashGiven.value === billAmount.value){
+                       showMessage("Bill Payment Done!!")
                    }
             
                    else {
